@@ -1,6 +1,7 @@
 #
 # >>> Escriba el codigo del reducer a partir de este punto <<<
 #
+
 import sys
 
 if __name__ == '__main__':
@@ -25,3 +26,4 @@ if __name__ == '__main__':
             total = val
 
     sys.stdout.write("{}\t{}\n".format(curkey, total))
+    
