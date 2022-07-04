@@ -15,3 +15,4 @@ def purpose_amount(x):
 for line in sys.stdin:
     result = line.split(',')
     print(purpose_amount(result))
+    
