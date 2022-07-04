@@ -1,29 +1,15 @@
 #
-# >>> Escriba el codigo del reducer a partir de este punto <<<
+# >>> Escriba el codigo del mapper a partir de este punto <<<
 #
 
 import sys
 
-if __name__ == '__main__':
-    curkey = None
-    total = 0
-    max = 0
-    aux = 0
-    
-    for line in sys.stdin:        
-        key, val = line.split("\t")
-        val = int(val)
-        aux = val
+if __name__ == "__main__":
 
-        if key == curkey:
-            if aux > max:
-                max = aux  
-        else:          
-            if curkey is not None:
-              
-                sys.stdout.write("{}\t{}\n".format(curkey, max))
-            curkey = key
-            max = val
+    for row in sys.stdin:
+        dividir = row.split(",")
+        segundaCol = dividir[3]
+        terceraCol = dividir[4]
 
-    sys.stdout.write("{}\t{}\n".format(curkey, max))
-
+        sys.stdout.write(f"{segundaCol}\t{terceraCol}\n")
+        
