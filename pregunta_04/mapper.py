@@ -16,3 +16,4 @@ for line in sys.stdin:
 
 for purpose, amount in biggest_purposes.items():
     print(purpose + "," + str(amount))
+    
